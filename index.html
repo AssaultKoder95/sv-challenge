@@ -18,6 +18,38 @@
 
 </head>
 
+<script type="text/javascript">
+
+function getSelectedText(id) {
+    var elt = document.getElementById(id);
+
+    if (elt.selectedIndex == -1)
+        return null;
+
+    return elt.options[elt.selectedIndex].text;
+}
+
+function updateModelList(id){
+
+var value = getSelectedText(id);
+
+if(value == "Hyundai")
+{
+	document.getElementById(parseInt(id)+3).innerHTML = " <option>-Select Model-</option><option value=\"amaze\">Amaze</option><option value=\"brv\">BRV</option><option value=\"city\">City</option> ";
+}
+else if(value == "Honda")
+{
+	document.getElementById(parseInt(id)+3).innerHTML = " <option>-Select Model-</option><option value=\"creta\">Creta</option><option value=\"eon\">EON</option><option value=\"grandi10\">Grand i10</option> ";
+}
+else if(value == "Maruti")
+{
+	document.getElementById(parseInt(id)+3).innerHTML = " <option>-Select Model-</option><option value=\"alto800\">Alto 800</option><option value=\"altok10\">Alto K10</option><option value=\"baleno\">Baleno</option> ";
+}
+
+}
+
+</script>
+
 <body class="m-home" data-scrolling-animations="true" data-equal-height=".b-auto__main-item">
 
 	<!-- Loader -->
@@ -133,10 +165,25 @@
 			<h1 class="wow zoomInUp" data-wow-delay="0.3s">UNSURE WHICH VEHICLE YOU ARE LOOKING FOR? FIND IT HERE</h1>
 			<div class="b-search__main wow zoomInUp" data-wow-delay="0.3s">
 				<h4>SELECT VEHICLE SPECIFICATIONS</h4>
-				<form action="searchResults.php" method="POST" class="b-search__main-form">
+				<form action="searchList.php" method="POST" class="b-search__main-form">
 					<div class="row">
 						<div class="col-xs-12 col-md-8">
 							<div class="m-firstSelects">
+
+								<div class="col-xs-4">
+									<select name="select3" id="1" onchange="updateModelList(this.id)">
+										<option>-Select Brand-</option>
+	        							<option value="Hyundai">Hyundai</option>
+										<option value="Honda">Honda</option>
+										<option value="Maruti">Maruti</option>
+										</select>
+									<span class="fa fa-caret-down"></span>
+								</div>
+
+								<div class="col-xs-4">
+									<h2> OR </h2>
+								</div>
+
 								<div class="col-xs-4">
 									<select name="select1">
 											<option value="1" selected="selected">All Vehicle Types</option>
@@ -150,99 +197,13 @@
 											<option value="convertibles">Convertibles</option>
 											<option value="coupe">Coupe</option>
 										</select>
-										<span class="fa fa-caret-down"></span>
-								</div>
-								<div class="col-xs-4">
-									<select name="select2">
-										<option value="-1"> Car Brand</option>
-										<option value="" disabled="disabled">-Select Brand-</option>
-	        							<option value="Maruti">Maruti</option>
-										<option value="Hyundai">Hyundai</option>
-										<option value="Honda">Honda</option>
-										<option value="Toyota">Toyota</option>
-										<option value="Mahindra">Mahindra</option>
-										<option value="Tata">Tata</option>
-										<option value="Ford">Ford</option>
-										<option value="Chevrolet">Chevrolet</option>
-										<option value="Renault">Renault</option>
-										<option value="Volkswagen">Volkswagen</option>
-										<option value="Nissan">Nissan</option>
-										<option value="Datsun">Datsun</option>
-										<option value="" disabled="disabled">-All Brands-</option>
-										<option value="Abarth">Abarth</option>
-										<option value="Aston Martin">Aston Martin</option>
-										<option value="Audi">Audi</option>
-										<option value="Bentley">Bentley</option>
-										<option value="BMW">BMW</option>
-										<option value="Bugatti">Bugatti</option>
-										<option value="Chevrolet">Chevrolet</option>
-										<option value="Conquest">Conquest</option>
-										<option value="Datsun">Datsun</option>
-										<option value="DC">DC</option>
-										<option value="Ferrari">Ferrari</option>
-										<option value="Fiat">Fiat</option>
-										<option value="Force">Force</option>
-										<option value="Ford">Ford</option>
-										<option value="Honda">Honda</option>
-										<option value="Hyundai">Hyundai</option>
-										<option value="ICML">ICML</option>
-										<option value="Isuzu">Isuzu</option>
-										<option value="Jaguar">Jaguar</option>
-										<option value="Jeep">Jeep</option>
-										<option value="Lamborghini">Lamborghini</option>
-										<option value="Land Rover">Land Rover</option>
-										<option value="Mahindra">Mahindra</option>
-										<option value="Mahindra Ssangyong">Mahindra Ssangyong</option>
-										<option value="Maruti">Maruti</option>
-										<option value="Maserati">Maserati</option>
-										<option value="Mercedes-Benz">Mercedes-Benz</option>
-										<option value="Mini">Mini</option>
-										<option value="Mitsubishi">Mitsubishi</option>
-										<option value="Nissan">Nissan</option>
-										<option value="Porsche">Porsche</option>
-										<option value="Premier">Premier</option>
-										<option value="Renault">Renault</option>
-										<option value="Rolls-Royce">Rolls-Royce</option>
-										<option value="Skoda">Skoda</option>
-										<option value="Tata">Tata</option>
-										<option value="Tesla">Tesla</option>
-										<option value="Toyota">Toyota</option>
-										<option value="Volkswagen">Volkswagen</option>
-										<option value="Volvo">Volvo</option>
-										</select>
-										<span class="fa fa-caret-down"></span>
-								</div>
-								<div class="col-xs-4">
-									<select name="select3">
-											<option value="1" selected="selected">Car Model</option>
-											<option value="2">Vehicle Status 2</option>
-											<option value="3">Vehicle Status 3</option>
-											<option value="4">Vehicle Status 4</option>
-											<option value="5">Vehicle Status 5</option>
-										</select>
 									<span class="fa fa-caret-down"></span>
 								</div>
 							</div>
 							<div class="m-secondSelects">
 								<div class="col-xs-4">
-									<select name="select4">
-											<option value="0" selected="selected">Min Year</option>
-											<option value="2015">2015</option>
-											<option value="2014">2014</option>
-											<option value="2013">2013</option>
-											<option value="2012">2012</option>
-											<option value="2011">2011</option>
-										</select>
-									<span class="fa fa-caret-down"></span>
-								</div>
-								<div class="col-xs-4">
-									<select name="select5">
-											<option value="0" selected="selected">Max Year</option>
-											<option value="2016">2016</option>
-											<option value="2015">2015</option>
-											<option value="2014">2014</option>
-											<option value="2013">2013</option>
-										</select>
+									<select name="select4" id="4">
+									</select>
 									<span class="fa fa-caret-down"></span>
 								</div>
 							</div>
@@ -276,7 +237,8 @@
 							<span class="b-world__item-val-title">WE OFFER</span>
 						</div>
 						<h2>Expert Reviews</h2>
-						<p> We have the best in class panel of people to review each & every minute detail of the vehicle, so that you can be assured of each detail.
+						<p> We have the best in class panel of people to review each & every minute detail of the vehicle, so that you can be assured
+							of each detail.
 						</p>
 					</div>
 				</div>
@@ -318,7 +280,7 @@
 							<img src="media/186x113/mers.jpg" alt="mers" />
 							<span class="m-premium">Premium</span>
 						</a>
-						
+
 						<div class="clearfix"></div>
 						<h5><a href="#">MERCEDES-AMG GT / GT S</a></h5>
 						<div class="b-featured__item-count"><span class="fa fa-tachometer"></span> Best in Class</div>
@@ -364,11 +326,11 @@
 						<div class="clearfix"></div>
 						<h5><a href="#">MERCEDES-AMG GT / GT S</a></h5>
 						<div class="b-featured__item-count"><span class="fa fa-tachometer"></span>Best in Class</div>
-						
+
 					</div>
 				</div>
-		
-				
+
+
 			</div>
 		</div>
 	</section>
@@ -408,16 +370,20 @@
 					<div class="b-welcome__text wow zoomInUp" data-wow-delay="0.3s">
 						<h2>WORLD'S LEADING CAR WEBSITE</h2>
 						<h3>WELCOME TO GAADI BABA</h3>
-						<p> We promise to provide haslefree and continuous support and service after the deal.So the customers need not worry about anything. We have the best 
-						team in the buisness who provides continuous support and are always available to serve the customers. 
+						<p> We promise to provide haslefree and continuous support and service after the deal.So the customers need not worry about
+							anything. We have the best team in the buisness who provides continuous support and are always available to serve
+							the customers.
 						</p>
-						<p> Just walk in select the car you want and we ensure you to provide the best experience and deal possible. We would ensure to fullfill your dream of owning that dream car of yours.
+						<p> Just walk in select the car you want and we ensure you to provide the best experience and deal possible. We would ensure
+							to fullfill your dream of owning that dream car of yours.
 						</p>
 						<ul>
-							<li><span class="fa fa-check"></span>Provides the best deals in auto loans according to the convinience of the customer </li>
+							<li><span class="fa fa-check"></span>Provides the best deals in auto loans according to the convinience of the customer
+								</li>
 							<li><span class="fa fa-check"></span> Hasslefree experience and 24/7 support regarding any problem you face.</li>
 							<li><span class="fa fa-check"></span>buying guides and sales executives who would help you choose the car you want. </li>
-							<li><span class="fa fa-check"></span>Best deals for your old cars and many other exciting offers to give you the best      value for your money</li>
+							<li><span class="fa fa-check"></span>Best deals for your old cars and many other exciting offers to give you the best
+								value for your money</li>
 						</ul>
 					</div>
 				</div>
@@ -494,7 +460,7 @@
 											<span class="m-price">
 													SPORTS CAR
 												</span>
-											
+
 										</div>
 										<div class="b-featured__item-links m-auto">
 											<a href="#">sports</a>
@@ -604,7 +570,9 @@
 							</div>
 							<div class="b-homeAuto__world-item-text">
 								<span>25 AUG 2016</span>
-								<p>With the new improved engine supported by the latest technology this beauty is set to give other cars a tough competition. Also comes with the best in market milege and a well known and reputed service system. definately something to look for.
+								<p>With the new improved engine supported by the latest technology this beauty is set to give other cars a tough competition.
+									Also comes with the best in market milege and a well known and reputed service system. definately something to look
+									for.
 								</p>
 							</div>
 						</div>
@@ -636,9 +604,10 @@
 							</div>
 							<div class="b-homeAuto__world-item-text">
 								<span>27 SEPT 2016</span>
-								<p> The latest entry in this segment this car is certified to give you all the luxury expirience you ever dreamed of. The best in class engine combined by the beautifully 
-								designed interiors and looks makes it a perfect combination of power and elegance.
- 								</p>
+								<p> The latest entry in this segment this car is certified to give you all the luxury expirience you ever dreamed of.
+									The best in class engine combined by the beautifully designed interiors and looks makes it a perfect combination
+									of power and elegance.
+								</p>
 							</div>
 						</div>
 						<a href="blog.html" class="btn m-btn wow zoomInUp" data-wow-delay="0.3s">VISIT OUR BLOG<span class="fa fa-angle-right"></span></a>
@@ -712,8 +681,8 @@
 				data-stop-on-hover="true" data-items-desktop="2" data-items-desktop-small="2" data-items-tablet="1" data-items-tablet-small="1">
 				<div class="b-homeReviews__main wow slideInUp" data-wow-delay="0.3s">
 					<div class="b-homeReviews__main-body m-jaguarRev">
-						<p> The perfect place to check for if you want to purchase a car. Best deals innovative techniques and best employes makes it the best place to go.
-						Great experience and never ending support.
+						<p> The perfect place to check for if you want to purchase a car. Best deals innovative techniques and best employes makes
+							it the best place to go. Great experience and never ending support.
 						</p>
 					</div>
 					<div class="b-homeReviews__main-person">
@@ -730,7 +699,8 @@
 				</div>
 				<div class="b-homeReviews__main wow slideInUp" data-wow-delay="0.3s">
 					<div class="b-homeReviews__main-body m-bmw">
-						<p>Great facilities and support. Provides the best deals in the market and guides through every problems and confussion. Overall best expirience.			
+						<p>Great facilities and support. Provides the best deals in the market and guides through every problems and confussion.
+							Overall best expirience.
 						</p>
 					</div>
 					<div class="b-homeReviews__main-person">
@@ -748,8 +718,8 @@
 				<div class="b-homeReviews__main wow slideInUp" data-wow-delay="0.3s">
 					<div class="b-homeReviews__main-body m-jaguarRev">
 						<p>
-						The perfect place to check for if you want to purchase a car.Best deals innovative techniques and best employes makes it the best place to go.
-						Great experience and never ending support.
+							The perfect place to check for if you want to purchase a car.Best deals innovative techniques and best employes makes it
+							the best place to go. Great experience and never ending support.
 						</p>
 					</div>
 					<div class="b-homeReviews__main-person">
@@ -767,7 +737,8 @@
 				<div class="b-homeReviews__main wow slideInUp" data-wow-delay="0.3s">
 					<div class="b-homeReviews__main-body m-bmw">
 						<p>
-						    Great facilities and support. Provides the best deals in the market and guides through every problems and confussion. Overall best expirience.
+							Great facilities and support. Provides the best deals in the market and guides through every problems and confussion. Overall
+							best expirience.
 						</p>
 					</div>
 					<div class="b-homeReviews__main-person">
@@ -788,37 +759,38 @@
 	<!--b-homeReviews-->
 
 	<section class="b-brands s-shadow">
-			<div class="container">
-				<h5 class="s-titleBg wow zoomInUp" data-wow-delay="0.5s">FIND OUT MORE</h5><br />
-				<h2 class="s-title wow zoomInUp" data-wow-delay="0.5s">BRANDS WE OFFER</h2>
-				<div class="">
-					<div class="b-brands__brand wow rotateIn" data-wow-delay="0.5s">
-						<img src="media/brands/bmwLogo.png" alt="brand" />
-					</div>
-					<div class="b-brands__brand wow rotateIn" data-wow-delay="0.5s">
-						<img src="media/brands/ferrariLogo.png" alt="brand" />
-					</div>
-					<div class="b-brands__brand wow rotateIn" data-wow-delay="0.5s">
-						<img src="media/brands/volvo.png" alt="brand" />
-					</div>
-					<div class="b-brands__brand wow rotateIn" data-wow-delay="0.5s">
-						<img src="media/brands/mercLogo.png" alt="brand" />
-					</div>
-					<div class="b-brands__brand wow rotateIn" data-wow-delay="0.5s">
-						<img src="media/brands/audiLogo.png" alt="brand" />
-					</div>
-					<div class="b-brands__brand wow rotateIn" data-wow-delay="0.5s">
-						<img src="media/brands/honda.png" alt="brand" />
-					</div>
-					<div class="b-brands__brand wow rotateIn" data-wow-delay="0.5s">
-						<img src="media/brands/peugeot.png" alt="brand" />
-					</div>
+		<div class="container">
+			<h5 class="s-titleBg wow zoomInUp" data-wow-delay="0.5s">FIND OUT MORE</h5><br />
+			<h2 class="s-title wow zoomInUp" data-wow-delay="0.5s">BRANDS WE OFFER</h2>
+			<div class="">
+				<div class="b-brands__brand wow rotateIn" data-wow-delay="0.5s">
+					<img src="media/brands/bmwLogo.png" alt="brand" />
+				</div>
+				<div class="b-brands__brand wow rotateIn" data-wow-delay="0.5s">
+					<img src="media/brands/ferrariLogo.png" alt="brand" />
+				</div>
+				<div class="b-brands__brand wow rotateIn" data-wow-delay="0.5s">
+					<img src="media/brands/volvo.png" alt="brand" />
+				</div>
+				<div class="b-brands__brand wow rotateIn" data-wow-delay="0.5s">
+					<img src="media/brands/mercLogo.png" alt="brand" />
+				</div>
+				<div class="b-brands__brand wow rotateIn" data-wow-delay="0.5s">
+					<img src="media/brands/audiLogo.png" alt="brand" />
+				</div>
+				<div class="b-brands__brand wow rotateIn" data-wow-delay="0.5s">
+					<img src="media/brands/honda.png" alt="brand" />
+				</div>
+				<div class="b-brands__brand wow rotateIn" data-wow-delay="0.5s">
+					<img src="media/brands/peugeot.png" alt="brand" />
 				</div>
 			</div>
-		</section><!--b-brands-->
+		</div>
+	</section>
+	<!--b-brands-->
 
-	
-	
+
+
 	<div class="b-info">
 		<div class="container">
 			<div class="row">
@@ -838,7 +810,8 @@
 						</article>
 						<article class="b-info__aside-article">
 							<h3>About us</h3>
-							<p> Cars are essential part of family  & we at Gaadi Baba help you make your family complete. We help you find the best car for all your needs. </p>
+							<p> Cars are essential part of family & we at Gaadi Baba help you make your family complete. We help you find the best
+								car for all your needs. </p>
 						</article>
 					</aside>
 				</div>
@@ -867,7 +840,7 @@
 									<a>Repair</a>
 									<a>Accessories</a>
 									<a>Insurance</a>
-								</div>								
+								</div>
 							</div>
 						</div>
 						<div class="b-info__latest-article wow slideInUp" data-wow-delay="0.3s">
