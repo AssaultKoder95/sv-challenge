@@ -1,0 +1,980 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title> Gaadi Baba </title>
+
+	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
+
+	<link href="css/master.css" rel="stylesheet">
+
+	<!--[if lt IE 9]>
+		<script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+
+</head>
+
+<body class="m-home" data-scrolling-animations="true" data-equal-height=".b-auto__main-item">
+
+	<!-- Loader -->
+	<div id="page-preloader"><span class="spinner"></span></div>
+	<!-- Loader end -->
+
+	<header class="b-topBar">
+		<div class="container wow slideInDown" data-wow-delay="0.7s">
+			<div class="row">
+				<div class="col-md-4 col-xs-6">
+					<div class="b-topBar__addr">
+						<span class="fa fa-map-marker"></span> IGDTUW, DELHI, INDIA
+					</div>
+				</div>
+				<div class="col-md-2 col-xs-6">
+					<div class="b-topBar__tel">
+						<span class="fa fa-phone"></span> 1-800-123-123
+					</div>
+				</div>
+				<div class="col-md-6 col-xs-6">
+					<nav class="b-topBar__nav">
+						<ul>
+							<li><a href="register.html">Register</a></li>
+							<li><a href="login.html">Sign in</a></li>
+							<li><a href="askaquestion.html">Ask a Question</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!--b-topBar-->
+
+	<nav class="b-nav">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-3 col-xs-4">
+					<div class="b-nav__logo wow slideInLeft" data-wow-delay="0.3s">
+						<h3><a href="index.html">Gaadi<span>BABA</span></a></h3>
+						<h2><a href="index.html">Find your dream car</a></h2>
+					</div>
+				</div>
+				<div class="col-sm-9 col-xs-8">
+					<div class="b-nav__list wow slideInRight" data-wow-delay="0.3s">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav">
+									<span class="sr-only">Toggle navigation</span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+								</button>
+						</div>
+						<div class="collapse navbar-collapse navbar-main-slide" id="nav">
+							<ul class="navbar-nav-menu">
+								<li><a href="index.html">Home</a></li>
+								<li><a href="search.html">Search</a></li>
+								<li><a href="compare.html">Compare</a></li>
+								<li class="dropdown">
+									<a class="dropdown-toggle" data-toggle='dropdown' href="#">Service <span class="fa fa-caret-down"></span></a>
+									<ul class="dropdown-menu h-nav">
+										<li><a href="reviews.html">Reviews</a></li>
+										<li><a href="askaquestion.html">Ask Expert</a></li>
+									</ul>
+								</li>
+								<li><a href="blog.html">Blog </a></li>
+								<li><a href="contacts.html">Contact</a></li>
+								<li><a href="about.html">About</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</nav>
+	<!--b-nav-->
+
+	<section class="b-slider">
+		<div id="carousel" class="slide carousel carousel-fade">
+			<div class="carousel-inner">
+				<div class="item active">
+					<img src="media/main-slider/4.jpg" alt="sliderImg" />
+					<div class="container">
+						<div class="carousel-caption b-slider__info">
+							<h3>Find your dream car</h3>
+							<h2> Honda <br/> Mobilio </h2>
+							<p>Model 2016 </p>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<img src="media/main-slider/2.jpg" alt="sliderImg" />
+					<div class="container">
+						<div class="carousel-caption b-slider__info">
+							<h3>Find your dream car</h3>
+							<h2> Honda <br/> HR-V</h2>
+							<p>Model 2016 </p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<a class="carousel-control right" href="#carousel" data-slide="next">
+				<span class="fa fa-angle-right m-control-right"></span>
+			</a>
+			<a class="carousel-control left" href="#carousel" data-slide="prev">
+				<span class="fa fa-angle-left m-control-left"></span>
+			</a>
+		</div>
+	</section>
+	<!--b-slider-->
+
+	<section class="b-search">
+		<div class="container">
+			<h1 class="wow zoomInUp" data-wow-delay="0.3s">UNSURE WHICH VEHICLE YOU ARE LOOKING FOR? FIND IT HERE</h1>
+			<div class="b-search__main wow zoomInUp" data-wow-delay="0.3s">
+				<h4>SELECT VEHICLE SPECIFICATIONS</h4>
+				<form action="searchResults.php" method="POST" class="b-search__main-form">
+					<div class="row">
+						<div class="col-xs-12 col-md-8">
+							<div class="m-firstSelects">
+								<div class="col-xs-4">
+									<select name="select1">
+											<option value="1" selected="selected">All Vehicle Types</option>
+											<option value="hatchback">Hatchback</option>
+											<option value="sedans">Sedans</option>
+											<option value="muv">MUV</option>
+											<option value="suv">SUV</option>
+											<option value="luxury">Luxury</option>
+											<option value="hybrids">Hybrids</option>
+											<option value="minivans">Minivans</option>
+											<option value="convertibles">Convertibles</option>
+											<option value="coupe">Coupe</option>
+										</select>
+										<span class="fa fa-caret-down"></span>
+								</div>
+								<div class="col-xs-4">
+									<select name="select2">
+										<option value="-1"> Car Brand</option>
+										<option value="" disabled="disabled">-Select Brand-</option>
+	        							<option value="Maruti">Maruti</option>
+										<option value="Hyundai">Hyundai</option>
+										<option value="Honda">Honda</option>
+										<option value="Toyota">Toyota</option>
+										<option value="Mahindra">Mahindra</option>
+										<option value="Tata">Tata</option>
+										<option value="Ford">Ford</option>
+										<option value="Chevrolet">Chevrolet</option>
+										<option value="Renault">Renault</option>
+										<option value="Volkswagen">Volkswagen</option>
+										<option value="Nissan">Nissan</option>
+										<option value="Datsun">Datsun</option>
+										<option value="" disabled="disabled">-All Brands-</option>
+										<option value="Abarth">Abarth</option>
+										<option value="Aston Martin">Aston Martin</option>
+										<option value="Audi">Audi</option>
+										<option value="Bentley">Bentley</option>
+										<option value="BMW">BMW</option>
+										<option value="Bugatti">Bugatti</option>
+										<option value="Chevrolet">Chevrolet</option>
+										<option value="Conquest">Conquest</option>
+										<option value="Datsun">Datsun</option>
+										<option value="DC">DC</option>
+										<option value="Ferrari">Ferrari</option>
+										<option value="Fiat">Fiat</option>
+										<option value="Force">Force</option>
+										<option value="Ford">Ford</option>
+										<option value="Honda">Honda</option>
+										<option value="Hyundai">Hyundai</option>
+										<option value="ICML">ICML</option>
+										<option value="Isuzu">Isuzu</option>
+										<option value="Jaguar">Jaguar</option>
+										<option value="Jeep">Jeep</option>
+										<option value="Lamborghini">Lamborghini</option>
+										<option value="Land Rover">Land Rover</option>
+										<option value="Mahindra">Mahindra</option>
+										<option value="Mahindra Ssangyong">Mahindra Ssangyong</option>
+										<option value="Maruti">Maruti</option>
+										<option value="Maserati">Maserati</option>
+										<option value="Mercedes-Benz">Mercedes-Benz</option>
+										<option value="Mini">Mini</option>
+										<option value="Mitsubishi">Mitsubishi</option>
+										<option value="Nissan">Nissan</option>
+										<option value="Porsche">Porsche</option>
+										<option value="Premier">Premier</option>
+										<option value="Renault">Renault</option>
+										<option value="Rolls-Royce">Rolls-Royce</option>
+										<option value="Skoda">Skoda</option>
+										<option value="Tata">Tata</option>
+										<option value="Tesla">Tesla</option>
+										<option value="Toyota">Toyota</option>
+										<option value="Volkswagen">Volkswagen</option>
+										<option value="Volvo">Volvo</option>
+										</select>
+										<span class="fa fa-caret-down"></span>
+								</div>
+								<div class="col-xs-4">
+									<select name="select3">
+											<option value="1" selected="selected">Car Model</option>
+											<option value="2">Vehicle Status 2</option>
+											<option value="3">Vehicle Status 3</option>
+											<option value="4">Vehicle Status 4</option>
+											<option value="5">Vehicle Status 5</option>
+										</select>
+									<span class="fa fa-caret-down"></span>
+								</div>
+							</div>
+							<div class="m-secondSelects">
+								<div class="col-xs-4">
+									<select name="select4">
+											<option value="0" selected="selected">Min Year</option>
+											<option value="2015">2015</option>
+											<option value="2014">2014</option>
+											<option value="2013">2013</option>
+											<option value="2012">2012</option>
+											<option value="2011">2011</option>
+										</select>
+									<span class="fa fa-caret-down"></span>
+								</div>
+								<div class="col-xs-4">
+									<select name="select5">
+											<option value="0" selected="selected">Max Year</option>
+											<option value="2016">2016</option>
+											<option value="2015">2015</option>
+											<option value="2014">2014</option>
+											<option value="2013">2013</option>
+										</select>
+									<span class="fa fa-caret-down"></span>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 col-xs-12 text-left s-noPadding">
+							<div class="b-search__main-form-range">
+								<label>PRICE RANGE</label>
+								<div class="slider"></div>
+								<input type="hidden" name="min" class="j-min" value="" />
+								<input type="hidden" name="max" class="j-max" value="" />
+							</div>
+							<div class="b-search__main-form-submit">
+								<button type="submit" class="btn m-btn">Search<span class="fa fa-angle-right"></span></button>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</section>
+	<!--b-search-->
+
+
+	<section class="b-world">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-4 col-xs-12">
+					<div class="b-world__item wow zoomInLeft" data-wow-delay="0.3s">
+						<img class="img-responsive" src="media/370x200/wolks.jpg" alt="wolks" />
+						<div class="b-world__item-val">
+							<span class="b-world__item-val-title">WE OFFER</span>
+						</div>
+						<h2>Expert Reviews</h2>
+						<p> We have the best in class panel of people to review each & every minute detail of the vehicle, so that you can be assured of each detail.
+						</p>
+					</div>
+				</div>
+				<div class="col-sm-4 col-xs-12">
+					<div class="b-world__item wow zoomInUp" data-wow-delay="0.3s">
+						<img class="img-responsive" src="media/370x200/mazda.jpg" alt="mazda" />
+						<div class="b-world__item-val">
+							<span class="b-world__item-val-title">WE ARE THE</span>
+						</div>
+						<h2>Largest Car Blog</h2>
+						<p> We believe in serving our customers best by providing them the right knowledge about the auto industry.
+						</p>
+					</div>
+				</div>
+				<div class="col-sm-4 col-xs-12">
+					<div class="b-world__item wow zoomInRight" data-wow-delay="0.3s">
+						<img class="img-responsive" src="media/370x200/chevrolet.jpg" alt="chevrolet" />
+						<div class="b-world__item-val">
+							<span class="b-world__item-val-title">OUR CUSTOMERS GET</span>
+						</div>
+						<h2> Best User Experience </h2>
+						<p>All the vehicles we showcase are passed through various tests conducted by our experts.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--b-world-->
+
+	<section class="b-featured">
+		<div class="container">
+			<h2 class="s-title wow zoomInUp" data-wow-delay="0.3s">Featured Vehicles</h2>
+			<div id="carousel-small" class="owl-carousel enable-owl-carousel" data-items="4" data-navigation="true" data-auto-play="true"
+				data-stop-on-hover="true" data-items-desktop="4" data-items-desktop-small="4" data-items-tablet="3" data-items-tablet-small="2">
+				<div>
+					<div class="b-featured__item wow rotateIn" data-wow-delay="0.3s">
+						<a href="#">
+							<img src="media/186x113/mers.jpg" alt="mers" />
+							<span class="m-premium">Premium</span>
+						</a>
+						
+						<div class="clearfix"></div>
+						<h5><a href="#">MERCEDES-AMG GT / GT S</a></h5>
+						<div class="b-featured__item-count"><span class="fa fa-tachometer"></span> Best in Class</div>
+					</div>
+				</div>
+				<div>
+					<div class="b-featured__item wow rotateIn" data-wow-delay="0.3s">
+						<a href="#">
+							<img src="media/186x113/audi.jpg" alt="audi" />
+						</a>
+						<div class="clearfix"></div>
+						<h5><a href="#">AUDI R8 SPYDER V-8</a></h5>
+						<div class="b-featured__item-count"><span class="fa fa-tachometer"></span> Premium Buy </div>
+					</div>
+				</div>
+				<div>
+					<div class="b-featured__item wow rotateIn" data-wow-delay="0.3s">
+						<a href="#">
+							<img src="media/186x113/aston.jpg" alt="aston" />
+							<span class="m-leasing"> LUXURY </span>
+						</a>
+						<div class="clearfix"></div>
+						<h5><a href="#">ASTON MARTIN VANTAGE</a></h5>
+						<div class="b-featured__item-count"><span class="fa fa-tachometer"></span>Luxury Buy</div>
+					</div>
+				</div>
+				<div>
+					<div class="b-featured__item wow rotateIn" data-wow-delay="0.3s">
+						<a href="#">
+							<img src="media/186x113/jaguar.jpg" alt="jaguar" />
+						</a>
+						<div class="clearfix"></div>
+						<h5><a href="#">JAGUAR F-TYPE R</a></h5>
+						<div class="b-featured__item-count"><span class="fa fa-tachometer"></span>New Arrival</div>
+					</div>
+				</div>
+				<div>
+					<div class="b-featured__item wow rotateIn" data-wow-delay="0.3s">
+						<a href="#">
+							<img src="media/186x113/mers.jpg" alt="mers" />
+							<span class="m-premium">Premium</span>
+						</a>
+						<div class="clearfix"></div>
+						<h5><a href="#">MERCEDES-AMG GT / GT S</a></h5>
+						<div class="b-featured__item-count"><span class="fa fa-tachometer"></span>Best in Class</div>
+						
+					</div>
+				</div>
+		
+				
+			</div>
+		</div>
+	</section>
+	<!--b-featured-->
+
+	<section class="b-welcome">
+		<div class="container">
+			<div class="row">
+				<div class="b-welcome__services">
+					<div class="col-md-3 col-xs-12">
+						<div class="row">
+							<div class="col-xs-12 m-padding">
+								<div class="b-welcome__services-auto wow zoomInLeft" data-wow-delay="0.3s">
+									<div class="b-welcome__services-img m-auto">
+										<span class="fa fa-cab"></span>
+									</div>
+									<h3>CAR COMPARISON</h3>
+								</div>
+							</div>
+							<div class="col-xs-12 text-right visible-md visible-lg">
+								<div class="m-circle wow slideInRight" data-wow-delay="0.3s">
+									<span class="b-welcome__services-circle"></span>
+								</div>
+							</div>
+							<div class="col-xs-12 m-padding">
+								<div class="b-welcome__services-buying wow zoomInLeft" data-wow-delay="0.3s">
+									<div class="b-welcome__services-img m-buying">
+										<span class="fa fa-book"></span>
+									</div>
+									<h3>BUYING GUIDE</h3>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-md-6">
+					<div class="b-welcome__text wow zoomInUp" data-wow-delay="0.3s">
+						<h2>WORLD'S LEADING CAR WEBSITE</h2>
+						<h3>WELCOME TO GAADI BABA</h3>
+						<p> We promise to provide haslefree and continuous support and service after the deal.So the customers need not worry about anything. We have the best 
+						team in the buisness who provides continuous support and are always available to serve the customers. 
+						</p>
+						<p> Just walk in select the car you want and we ensure you to provide the best experience and deal possible. We would ensure to fullfill your dream of owning that dream car of yours.
+						</p>
+						<ul>
+							<li><span class="fa fa-check"></span>Provides the best deals in auto loans according to the convinience of the customer </li>
+							<li><span class="fa fa-check"></span> Hasslefree experience and 24/7 support regarding any problem you face.</li>
+							<li><span class="fa fa-check"></span>buying guides and sales executives who would help you choose the car you want. </li>
+							<li><span class="fa fa-check"></span>Best deals for your old cars and many other exciting offers to give you the best      value for your money</li>
+						</ul>
+					</div>
+				</div>
+				<div class="b-welcome__services">
+					<div class="col-md-3 col-xs-12">
+						<div class="row">
+							<div class="col-xs-12 m-padding">
+								<div class="b-welcome__services-trade wow zoomInRight" data-wow-delay="0.3s">
+									<div class="b-welcome__services-img m-trade">
+										<span class="fa fa-male"></span>
+									</div>
+									<h3>Trade-Ins</h3>
+								</div>
+							</div>
+							<div class="col-xs-12 text-left visible-md visible-lg">
+								<div class="m-circle pull-right wow slideInLeft" data-wow-delay="0.3s">
+									<span class="b-welcome__services-circle m-left"></span>
+								</div>
+							</div>
+							<div class="col-xs-12 m-padding">
+								<div class="b-welcome__services-support wow zoomInRight" data-wow-delay="0.3s">
+									<div class="b-welcome__services-img m-support">
+										<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+											width="45px" height="45px" viewBox="0 0 612 612" style="enable-background:new 0 0 612 612;" xml:space="preserve">
+											<g>
+												<path d="M257.938,336.072c0,17.355-14.068,31.424-31.423,31.424c-17.354,0-31.422-14.068-31.422-31.424
+														c0-17.354,14.068-31.423,31.422-31.423C243.87,304.65,257.938,318.719,257.938,336.072z M385.485,304.65
+														c-17.354,0-31.423,14.068-31.423,31.424c0,17.354,14.069,31.422,31.423,31.422c17.354,0,31.424-14.068,31.424-31.422
+														C416.908,318.719,402.84,304.65,385.485,304.65z M612,318.557v59.719c0,29.982-24.305,54.287-54.288,54.287h-39.394
+														C479.283,540.947,379.604,606.412,306,606.412s-173.283-65.465-212.318-173.85H54.288C24.305,432.562,0,408.258,0,378.275v-59.719
+														c0-20.631,11.511-38.573,28.46-47.758c0.569-84.785,25.28-151.002,73.553-196.779C149.895,28.613,218.526,5.588,306,5.588
+														c87.474,0,156.105,23.025,203.987,68.43c48.272,45.777,72.982,111.995,73.553,196.779C600.489,279.983,612,297.925,612,318.557z
+														M497.099,336.271c0-13.969-0.715-27.094-1.771-39.812c-24.093-22.043-67.832-38.769-123.033-44.984
+														c7.248,8.15,13.509,18.871,17.306,32.983c-33.812-26.637-100.181-20.297-150.382-79.905c-2.878-3.329-5.367-6.51-7.519-9.417
+														c-0.025-0.035-0.053-0.062-0.078-0.096l0.006,0.002c-8.931-12.078-11.976-19.262-12.146-11.31
+														c-1.473,68.513-50.034,121.925-103.958,129.46c-0.341,7.535-0.62,15.143-0.62,23.08c0,28.959,4.729,55.352,12.769,79.137
+														c30.29,36.537,80.312,46.854,124.586,49.59c8.219-13.076,26.66-22.205,48.136-22.205c29.117,0,52.72,16.754,52.72,37.424
+														c0,20.668-23.604,37.422-52.72,37.422c-22.397,0-41.483-9.93-49.122-23.912c-30.943-1.799-64.959-7.074-95.276-21.391
+														C198.631,535.18,264.725,568.41,306,568.41C370.859,568.41,497.099,486.475,497.099,336.271z M550.855,264.269
+														C547.4,116.318,462.951,38.162,306,38.162S64.601,116.318,61.145,264.269h20.887c7.637-49.867,23.778-90.878,48.285-122.412
+														C169.37,91.609,228.478,66.13,306,66.13c77.522,0,136.63,25.479,175.685,75.727c24.505,31.533,40.647,72.545,48.284,122.412
+														H550.855L550.855,264.269z" />
+											</g>
+										</svg>
+									</div>
+									<h3>24/7 support</h3>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--b-welcome-->
+
+	<section class="b-homeAuto">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-6">
+					<div class="b-homeAuto__latest">
+						<h5 class="s-titleBg wow zoomInLeft" data-wow-delay="0.3s">GIVING BEST CUSTOMER EXPERIENCE </h5><br />
+						<h2 class="s-title wow zoomInLeft" data-wow-delay="0.3s">LATEST VEHICLES</h2>
+						<div class="b-auto__main">
+							<div class="row">
+								<div class="col-md-6 col-sm-12">
+									<div class="b-auto__main-item wow zoomInUp" data-wow-delay="0.3s">
+										<img class="img-responsive center-block" src="media/270x150/nissanGT.jpg" alt="nissan" />
+										<div class="b-world__item-val">
+											<span class="b-world__item-val-title">REGISTERED <span>2016</span></span>
+										</div>
+										<h2><a>Nissan GT-R NISMO</a></h2>
+										<div class="b-auto__main-item-info">
+											<span class="m-price">
+													SPORTS CAR
+												</span>
+											
+										</div>
+										<div class="b-featured__item-links m-auto">
+											<a href="#">sports</a>
+											<a href="#">2015</a>
+											<a href="#">Manual</a>
+											<a href="#">white</a>
+											<a href="#">Petrol</a>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6 col-sm-12">
+									<div class="b-auto__main-item wow zoomInUp" data-wow-delay="0.3s">
+										<img class="img-responsive center-block" src="media/270x150/bmw.jpg" alt="bmw" />
+										<div class="b-world__item-val">
+											<span class="b-world__item-val-title">REGISTERED <span>2016</span></span>
+										</div>
+										<h2><a href="#">BMW 650i Coupe</a></h2>
+										<div class="b-auto__main-item-info">
+											<span class="m-price">
+													PREMIUM CAR
+												</span>
+										</div>
+										<div class="b-featured__item-links m-auto">
+											<a href="#">PREMIUM</a>
+											<a href="#">2016</a>
+											<a href="#">Manual</a>
+											<a href="#">BMW</a>
+											<a href="#">Petrol</a>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6 col-sm-12">
+									<div class="b-auto__main-item wow zoomInUp" data-wow-delay="0.3s">
+										<img class="img-responsive center-block" src="media/270x150/LandRover.jpg" alt="LandRover" />
+										<div class="b-world__item-val">
+											<span class="b-world__item-val-title">REGISTERED <span>2016</span></span>
+										</div>
+										<h2><a href="#"> Range Rover</a></h2>
+										<div class="b-auto__main-item-info">
+											<span class="m-price">
+													LUXURY SUV
+												</span>
+										</div>
+										<div class="b-featured__item-links m-auto">
+											<a href="#">SUV</a>
+											<a href="#">2016</a>
+											<a href="#">Manual</a>
+											<a href="#">GREY</a>
+											<a href="#">Petrol</a>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6 col-sm-12">
+									<div class="b-auto__main-item wow zoomInUp" data-wow-delay="0.3s">
+										<img class="img-responsive center-block" src="media/270x150/corvette.jpg" alt="corvette" />
+										<div class="b-world__item-val">
+											<span class="b-world__item-val-title">REGISTERED <span>2016</span></span>
+										</div>
+										<h2><a href="#">Chevrolet Corvette Z06</a></h2>
+										<div class="b-auto__main-item-info">
+											<span class="m-price">
+													CONVERTIBLES
+												</span>
+										</div>
+										<div class="b-featured__item-links m-auto">
+											<a href="#">Convertibles</a>
+											<a href="#">2016</a>
+											<a href="#">Manual</a>
+											<a href="#">Blue</a>
+											<a href="#">Petrol</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-6">
+					<div class="b-homeAuto__world">
+						<h5 class="s-titleBg wow zoomInRight" data-wow-delay="0.3s">EVERYTHING YOU NEED TO KNOW</h5><br />
+						<h2 class="s-title wow zoomInRight" data-wow-delay="0.3s">THE WORLD OF AUTOS</h2>
+						<div class="b-homeAuto__world-item wow zoomInUp" data-wow-delay="0.3s">
+							<div class="row">
+								<div class="col-sm-7 col-xs-12">
+									<div class="b-homeAuto__world-item-info">
+										<h2>
+											<a href="#">2016 Mazda CX-3
+													Mazda's new mini-ute drives nearly<br/>
+													as sharp as it looks.
+												</a>
+										</h2>
+										<div class="b-world__item-val">
+											<div class="b-world__item-val-circles">
+												<span></span>
+												<span></span>
+												<span></span>
+												<span></span>
+												<span class="m-empty"></span>
+											</div>
+											<span class="b-world__item-num">4.0</span>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-5 col-xs-12">
+									<img src="media/222x150/mazda2.jpg" class="img-responsive center-block" alt="mazda" />
+								</div>
+							</div>
+							<div class="b-homeAuto__world-item-text">
+								<span>25 AUG 2016</span>
+								<p>With the new improved engine supported by the latest technology this beauty is set to give other cars a tough competition. Also comes with the best in market milege and a well known and reputed service system. definately something to look for.
+								</p>
+							</div>
+						</div>
+						<div class="b-homeAuto__world-item wow zoomInUp" data-wow-delay="0.3s">
+							<div class="row">
+								<div class="col-xs-12 col-sm-7">
+									<div class="b-homeAuto__world-item-info">
+										<h2>
+											<a href="#"> 2015 Chevrolet Corvette Z06 vs. 
+													2015 Nissan GT-R NISMO, 2
+													014 Porsche 911 Turbo S
+												</a>
+										</h2>
+										<div class="b-world__item-val">
+											<div class="b-world__item-val-circles">
+												<span></span>
+												<span></span>
+												<span></span>
+												<span></span>
+												<span class="m-empty"></span>
+											</div>
+											<span class="b-world__item-num">4.5</span>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-5 col-xs-12">
+									<img src="media/222x150/bmw2.jpg" alt="bmw" class="img-responsive center-block" />
+								</div>
+							</div>
+							<div class="b-homeAuto__world-item-text">
+								<span>27 SEPT 2016</span>
+								<p> The latest entry in this segment this car is certified to give you all the luxury expirience you ever dreamed of. The best in class engine combined by the beautifully 
+								designed interiors and looks makes it a perfect combination of power and elegance.
+ 								</p>
+							</div>
+						</div>
+						<a href="blog.html" class="btn m-btn wow zoomInUp" data-wow-delay="0.3s">VISIT OUR BLOG<span class="fa fa-angle-right"></span></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--b-homeAuto-->
+
+	<section class="b-count">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-11 col-xs-12 percent-blocks m-main" data-waypoint-scroll="true">
+					<div class="row">
+						<div class="col-sm-3 col-xs-6">
+							<div class="b-count__item">
+								<div class="b-count__item-circle">
+									<span class="fa fa-car"></span>
+								</div>
+								<div class="chart" data-percent="1500">
+									<h2 class="percent">1500+</h2>
+								</div>
+								<h5> vehicles </h5>
+							</div>
+						</div>
+						<div class="col-sm-3 col-xs-6">
+							<div class="b-count__item">
+								<div class="b-count__item-circle">
+									<span class="fa fa-users"></span>
+								</div>
+								<div class="chart" data-percent="13254">
+									<h2 class="percent">10000+</h2>
+								</div>
+								<h5>Happy Customers </h5>
+							</div>
+						</div>
+						<div class="col-sm-3 col-xs-6">
+							<div class="b-count__item">
+								<div class="b-count__item-circle">
+									<span class="fa fa-building-o"></span>
+								</div>
+								<div class="chart" data-percent="1124">
+									<h2 class="percent">1000+</h2>
+								</div>
+								<h5> Car Reviews </h5>
+							</div>
+						</div>
+						<div class="col-sm-3 col-xs-6">
+							<div class="b-count__item j-lastHome">
+								<div class="b-count__item-circle">
+									<span class="fa fa-suitcase"></span>
+								</div>
+								<div class="chart" data-percent="100">
+									<h2 class="percent">100</h2>
+								</div>
+								<h5>100% Satisfied Clients</h5>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--b-count-->
+
+	<section class="b-homeReviews">
+		<div class="container">
+			<h1 class="s-title wow zoomInUp" data-wow-delay="0.3s">WHAT CUSTOMERS SAYING</h1>
+			<div id="carousel-small-revHome" class="owl-carousel enable-owl-carousel" data-items="2" data-navigation="true" data-auto-play="true"
+				data-stop-on-hover="true" data-items-desktop="2" data-items-desktop-small="2" data-items-tablet="1" data-items-tablet-small="1">
+				<div class="b-homeReviews__main wow slideInUp" data-wow-delay="0.3s">
+					<div class="b-homeReviews__main-body m-jaguarRev">
+						<p> The perfect place to check for if you want to purchase a car. Best deals innovative techniques and best employes makes it the best place to go.
+						Great experience and never ending support.
+						</p>
+					</div>
+					<div class="b-homeReviews__main-person">
+						<div class="b-review__main-person m-personTwo">
+							<div class="b-review__main-person-inside m-personTwo">
+							</div>
+						</div>
+						<div class="b-homeReviews__main-person-name">
+							<em>"</em>
+							<h4>Lalan Godbole</h4>
+							<p>Loyal Customer</p>
+						</div>
+					</div>
+				</div>
+				<div class="b-homeReviews__main wow slideInUp" data-wow-delay="0.3s">
+					<div class="b-homeReviews__main-body m-bmw">
+						<p>Great facilities and support. Provides the best deals in the market and guides through every problems and confussion. Overall best expirience.			
+						</p>
+					</div>
+					<div class="b-homeReviews__main-person">
+						<div class="b-review__main-person">
+							<div class="b-review__main-person-inside m-personThree">
+							</div>
+						</div>
+						<div class="b-homeReviews__main-person-name">
+							<em>"</em>
+							<h4>Dhirubhai Ambala</h4>
+							<p>Loyal Customer</p>
+						</div>
+					</div>
+				</div>
+				<div class="b-homeReviews__main wow slideInUp" data-wow-delay="0.3s">
+					<div class="b-homeReviews__main-body m-jaguarRev">
+						<p>
+						The perfect place to check for if you want to purchase a car.Best deals innovative techniques and best employes makes it the best place to go.
+						Great experience and never ending support.
+						</p>
+					</div>
+					<div class="b-homeReviews__main-person">
+						<div class="b-review__main-person m-personTwo">
+							<div class="b-review__main-person-inside m-personTwo">
+							</div>
+						</div>
+						<div class="b-homeReviews__main-person-name">
+							<em>"</em>
+							<h4>Phunsuk Wangdu</h4>
+							<p>Loyal Customer</p>
+						</div>
+					</div>
+				</div>
+				<div class="b-homeReviews__main wow slideInUp" data-wow-delay="0.3s">
+					<div class="b-homeReviews__main-body m-bmw">
+						<p>
+						    Great facilities and support. Provides the best deals in the market and guides through every problems and confussion. Overall best expirience.
+						</p>
+					</div>
+					<div class="b-homeReviews__main-person">
+						<div class="b-review__main-person">
+							<div class="b-review__main-person-inside m-personThree">
+							</div>
+						</div>
+						<div class="b-homeReviews__main-person-name">
+							<em>"</em>
+							<h4>Bruce Wayne</h4>
+							<p>Loyal Customer</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--b-homeReviews-->
+
+	<section class="b-brands s-shadow">
+			<div class="container">
+				<h5 class="s-titleBg wow zoomInUp" data-wow-delay="0.5s">FIND OUT MORE</h5><br />
+				<h2 class="s-title wow zoomInUp" data-wow-delay="0.5s">BRANDS WE OFFER</h2>
+				<div class="">
+					<div class="b-brands__brand wow rotateIn" data-wow-delay="0.5s">
+						<img src="media/brands/bmwLogo.png" alt="brand" />
+					</div>
+					<div class="b-brands__brand wow rotateIn" data-wow-delay="0.5s">
+						<img src="media/brands/ferrariLogo.png" alt="brand" />
+					</div>
+					<div class="b-brands__brand wow rotateIn" data-wow-delay="0.5s">
+						<img src="media/brands/volvo.png" alt="brand" />
+					</div>
+					<div class="b-brands__brand wow rotateIn" data-wow-delay="0.5s">
+						<img src="media/brands/mercLogo.png" alt="brand" />
+					</div>
+					<div class="b-brands__brand wow rotateIn" data-wow-delay="0.5s">
+						<img src="media/brands/audiLogo.png" alt="brand" />
+					</div>
+					<div class="b-brands__brand wow rotateIn" data-wow-delay="0.5s">
+						<img src="media/brands/honda.png" alt="brand" />
+					</div>
+					<div class="b-brands__brand wow rotateIn" data-wow-delay="0.5s">
+						<img src="media/brands/peugeot.png" alt="brand" />
+					</div>
+				</div>
+			</div>
+		</section><!--b-brands-->
+
+	
+	
+	<div class="b-info">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4 col-xs-12">
+					<aside class="b-info__aside wow zoomInLeft" data-wow-delay="0.3s">
+						<article class="b-info__aside-article">
+							<h3> 24 * 7 Support </h3>
+							<div class="b-info__aside-article-item">
+								<h6> Need Expert Advice ? </h6>
+							</div>
+							<div class="b-info__aside-article-item">
+								<h6> Need help finding your dream car ? </h6>
+							</div>
+							<div class="b-info__aside-article-item">
+								<p> Call us on 1800-123-123 </p>
+							</div>
+						</article>
+						<article class="b-info__aside-article">
+							<h3>About us</h3>
+							<p> Cars are essential part of family  & we at Gaadi Baba help you make your family complete. We help you find the best car for all your needs. </p>
+						</article>
+					</aside>
+				</div>
+				<div class="col-md-4 col-xs-12">
+					<div class="b-info__latest">
+						<h3 class="wow slideInUp" data-wow-delay="0.3s">Latest Blogs</h3>
+						<div class="b-info__latest-article wow slideInUp" data-wow-delay="0.3s">
+							<div class="b-info__latest-article-photo m-audi"></div>
+							<div class="b-info__latest-article-info">
+								<h6><a href="how_to_buy_your_first_car.html">How to buy your first car </a></h6>
+								<div class="b-featured__item-links m-auto">
+									<a>First Car</a>
+									<a>2016</a>
+									<a>Insurance</a>
+									<a>Finance</a>
+								</div>
+							</div>
+						</div>
+						<div class="b-info__latest-article wow slideInUp" data-wow-delay="0.3s">
+							<div class="b-info__latest-article-photo m-audiSpyder"></div>
+							<div class="b-info__latest-article-info">
+								<h6><a href="what_to_do_if_your_car_gets_damaged.html">What to do if your car gets damaged </a></h6>
+								<div class="b-featured__item-links m-auto">
+									<a>Damaged</a>
+									<a>2016</a>
+									<a>Repair</a>
+									<a>Accessories</a>
+									<a>Insurance</a>
+								</div>								
+							</div>
+						</div>
+						<div class="b-info__latest-article wow slideInUp" data-wow-delay="0.3s">
+							<div class="b-info__latest-article-photo m-aston"></div>
+							<div class="b-info__latest-article-info">
+								<h6><a href="how_to_maintain_your_first_car.html">How to maintain your new car </a></h6>
+								<div class="b-featured__item-links m-auto">
+									<a>New Car</a>
+									<a>2016</a>
+									<a>Air Pressure</a>
+									<a>Lubricants</a>
+									<a>Engine oil</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-xs-12">
+					<address class="b-info__contacts wow slideInUp" data-wow-delay="0.3s">
+						<p>contact us</p>
+						<div class="b-info__contacts-item">
+							<span class="fa fa-map-marker"></span>
+							<em>IGDTUW, DELHI,INDIA</em>
+						</div>
+						<div class="b-info__contacts-item">
+							<span class="fa fa-phone"></span>
+							<em>Phone:  1800-123-123</em>
+						</div>
+						<div class="b-info__contacts-item">
+							<span class="fa fa-envelope"></span>
+							<em>Email:  info@gaadibaba.com</em>
+						</div>
+					</address>
+					<address class="b-info__map">
+						<a href="contacts.html">Open Location Map</a>
+					</address>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--b-info-->
+
+	<footer class="b-footer">
+		<a id="to-top" href="#this-is-top"><i class="fa fa-chevron-up"></i></a>
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-4">
+					<div class="b-footer__company wow slideInLeft" data-wow-delay="0.3s">
+						<div class="b-nav__logo">
+							<h3><a href="index.html"><span>GAADIBABA</span></a></h3>
+						</div>
+						<p>&copy; 2016 Designed with <span class="fa fa-heart fa-lg"></span> by GAADIBABA </p>
+					</div>
+				</div>
+				<div class="col-xs-8">
+					<div class="b-footer__content wow slideInRight" data-wow-delay="0.3s">
+						<div class="b-footer__content-social">
+							<a href="https://www.facebook.com/apurva.chawla1/posts/1202191899848633"><span class="fa fa-facebook-square"></span></a>
+							<a href=""><span class="fa fa-twitter-square"></span></a>
+							<a href="#"><span class="fa fa-google-plus-square"></span></a>
+							<a href="#"><span class="fa fa-instagram"></span></a>
+							<a href="#"><span class="fa fa-youtube-square"></span></a>
+							<a href="#"><span class="fa fa-skype"></span></a>
+						</div>
+						<nav class="b-footer__content-nav">
+							<ul>
+								<li><a href="index.html">Home</a></li>
+								<li><a href="search.html">Search</a></li>
+								<li><a href="comparison.html">Compare</a></li>
+								<li><a href="service.html">Service</a></li>
+								<li><a href="blog.html">Blog</a></li>
+								<li><a href="contacts.html">Contact</a></li>
+								<li><a href="about.html">About</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!--b-footer-->
+
+	<!--Main-->
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/modernizr.custom.js"></script>
+
+	<script src="assets/rendro-easy-pie-chart/dist/jquery.easypiechart.min.js"></script>
+	<script src="js/waypoints.min.js"></script>
+	<script src="js/jquery.easypiechart.min.js"></script>
+	<script src="js/classie.js"></script>
+
+	<!--Owl Carousel-->
+	<script src="assets/owl-carousel/owl.carousel.min.js"></script>
+	<!--bxSlider-->
+	<script src="assets/bxslider/jquery.bxslider.js"></script>
+	<!-- jQuery UI Slider -->
+	<script src="assets/slider/jquery.ui-slider.js"></script>
+
+	<!--Theme-->
+	<script src="js/jquery.smooth-scroll.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script src="js/jquery.placeholder.min.js"></script>
+	<script src="js/theme.js"></script>
+</body>
+
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+
+</html>
