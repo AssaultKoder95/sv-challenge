@@ -1,0 +1,2 @@
+[19-Oct-2016 17:33:58 UTC] PHP Warning:  mysql_query(): Access denied for user 'aisindia'@'localhost' (using password: NO) in /home/aisindia/public_html/gaadibaba/php/registeration.php on line 11
+[19-Oct-2016 17:33:58 UTC] PHP Warning:  mysql_query(): A link to the server could not be established in /home/aisindia/public_html/gaadibaba/php/registeration.php on line 11

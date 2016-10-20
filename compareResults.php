@@ -72,6 +72,7 @@ $image3 = " <img class=\"img-responsive center-block\" src=\"media/270x180/$mode
 			<div class="row">
 				<div class="col-sm-3 col-xs-4">
 					<div class="b-nav__logo wow slideInLeft" data-wow-delay="0.3s">
+											<img src="images/logo/logoN.png">
 						<h3><a href="index.html">Gaadi<span>BABA</span></a></h3>
 						<h2><a href="index.html">Find your dream car</a></h2>
 					</div>

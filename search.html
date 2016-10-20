@@ -33,11 +33,11 @@ function updateModelList(id){
 
 var value = getSelectedText(id);
 
-if(value == "Hyundai")
+if(value == "Honda")
 {
 	document.getElementById(parseInt(id)+3).innerHTML = " <option>-Select Model-</option><option value=\"amaze\">Amaze</option><option value=\"brv\">BRV</option><option value=\"city\">City</option> ";
 }
-else if(value == "Honda")
+else if(value == "Hyundai")
 {
 	document.getElementById(parseInt(id)+3).innerHTML = " <option>-Select Model-</option><option value=\"creta\">Creta</option><option value=\"eon\">EON</option><option value=\"grandi10\">Grand i10</option> ";
 }
@@ -88,6 +88,7 @@ else if(value == "Maruti")
 			<div class="row">
 				<div class="col-sm-3 col-xs-4">
 					<div class="b-nav__logo wow slideInLeft" data-wow-delay="0.3s">
+												<img src="images/logo/logoN.png">
 						<h3><a href="index.html">Gaadi<span>BABA</span></a></h3>
 						<h2><a href="index.html">Find your dream car</a></h2>
 					</div>
@@ -183,14 +184,8 @@ else if(value == "Maruti")
 									<select name="select1">
 											<option value="1" selected="selected">All Vehicle Types</option>
 											<option value="hatchback">Hatchback</option>
-											<option value="sedans">Sedans</option>
-											<option value="muv">MUV</option>
+											<option value="sedan">Sedans</option>
 											<option value="suv">SUV</option>
-											<option value="luxury">Luxury</option>
-											<option value="hybrids">Hybrids</option>
-											<option value="minivans">Minivans</option>
-											<option value="convertibles">Convertibles</option>
-											<option value="coupe">Coupe</option>
 										</select>
 									<span class="fa fa-caret-down"></span>
 								</div>
@@ -207,8 +202,8 @@ else if(value == "Maruti")
 							<div class="b-search__main-form-range">
 								<label>PRICE RANGE</label>
 								<div class="slider"></div>
-								<input type="hidden" name="min" class="j-min" value="" />
-								<input type="hidden" name="max" class="j-max" value="" />
+								<input type="hidden" name="min" class="j-min" value="1" />
+								<input type="hidden" name="max" class="j-max" value="100" />
 							</div>
 							<div class="b-search__main-form-submit">
 								<button type="submit" class="btn m-btn">Search<span class="fa fa-angle-right"></span></button>
